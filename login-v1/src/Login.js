@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import jpIMG from './assets/jp.svg'
+import loginIMG from './assets/login.png'
 import './styles.css'
 
-function App() {
+function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -12,9 +12,8 @@ function App() {
         <div className="wrap-login">
           <form className="login-form">
 
-            <span className="login-form-title">Welcome</span>
             <span className="login-form-title">
-              <img src={jpIMG} alt="" />
+              <img src={loginIMG} alt="" />
             </span>
 
             <div className="wrap-input">
@@ -42,8 +41,12 @@ function App() {
             </div>
 
             <div className="text-center">
-              <span className="txt1">Não possui conta?</span>
-              <a href="#" className="txt2">Criar conta.</a>
+              <a href="#" className='txt2'>Forgot password?</a>
+            </div>
+
+            <div className="text-center">
+              <span className="txt1">Don't have an account?</span>
+              <a href="#" className="txt3">Register.</a>
             </div>
 
           </form>
@@ -53,4 +56,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
