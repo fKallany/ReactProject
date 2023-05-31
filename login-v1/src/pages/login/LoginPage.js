@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import loginIMG from './assets/login.png'
-import './styles.css'
+import loginIMG from './../../assets/login.png'
+import './LoginPage.css'
 
-function Login() {
+function LoginPage() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -41,12 +41,12 @@ function Login() {
             </div>
 
             <div className="text-center">
-              <a href="#" className='txt2'>Forgot password?</a>
+              <a href="/password" className='txt2'>Forgot password?</a>
             </div>
 
             <div className="text-center">
               <span className="txt1">Don't have an account?</span>
-              <a href="#" className="txt3">Register.</a>
+              <a href="/register" className="txt3">Register.</a>
             </div>
 
           </form>
@@ -56,4 +56,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default LoginPage;
