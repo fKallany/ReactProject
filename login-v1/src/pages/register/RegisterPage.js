@@ -29,7 +29,7 @@ function RegisterPage() {
             <div className="wrap-input">
               <input
                 className={nickname !== "" ? 'has-val input' : 'input'}
-                type="password"
+                type="text"
                 value={nickname}
                 onChange={e => setNickname(e.target.value)}
               />
