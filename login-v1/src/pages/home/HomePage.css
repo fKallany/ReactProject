@@ -1,11 +1,29 @@
 .container-home {
   width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   padding: 15px;
   background: #111;
-  color: #fff;
+}
+
+.container-section {
+  min-height: 100vh;
+  background: #eee;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.post {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-content {
+  padding: 30px;
 }

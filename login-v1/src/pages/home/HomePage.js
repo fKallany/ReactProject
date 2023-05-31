@@ -7,7 +7,7 @@ class HomePage extends Component {
     posts: []
   };
 
-  componentDidMount() {
+  async componentDidMount() {
     setTimeout(() => {
       this.setState({
         users: [
@@ -60,37 +60,46 @@ class HomePage extends Component {
           }
         ]
       })
-    }, 5000);
+    }, 2000);
+
+    await this.loadPosts()
+  }
+
+  loadPosts = async () => {
+    const { users, posts } = this.state;
+
+    console.log(users)
+    console.log(posts)
   }
 
   render() {
-    const { users, posts } = this.state;
+    const { posts } = this.state;
 
     return (
       <div className="container" >
         <div className='container-home'>
-          <div className="users">
-            {users.map(user => (
-              <div key={user.ID}>
-                <h1>{user.Nickname}</h1>
-              </div>
-            ))}
-          </div>
-          <div className="posts">
-            {posts.map(post => (
-              <div key={post.ID}>
-                <h1>{post.Title}</h1>
-                <p>{post.Body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
 
-        <div className="text-center">
-          <span className="txt1">Go to</span>
-          <a href="/" className='txt2'>Login Page</a>
-        </div>
+          <section className='container-section'>
+            <div className="posts">
+              {posts.map(post => (
+                <div className="post">
+                  <p value={posts.Nickname}></p>
+                  <div key={post.ID} className='post-content'>
+                    <h1>{post.Title}</h1>
+                    <p>{post.Body}</p>
+                  </div>
 
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <div className="text-center">
+            <span className="txt1">Go to</span>
+            <a href="/" className='txt2'>Login Page</a>
+          </div>
+
+        </div>
       </div>
     );
   }
