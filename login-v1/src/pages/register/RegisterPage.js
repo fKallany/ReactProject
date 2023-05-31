@@ -5,6 +5,9 @@ function RegisterPage() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [nickname, setNickname] = useState('')
+  const onClick = () => {
+    window.location.href = '/home';
+  };
 
   return (
     <div className="container">
@@ -47,7 +50,7 @@ function RegisterPage() {
             </div>
 
             <div className="container-register-form-btn">
-              <button className="register-form-btn">Register</button>
+              <button type='button' onClick={onClick} className="register-form-btn">Register</button>
             </div>
 
             <div className="text-center">
