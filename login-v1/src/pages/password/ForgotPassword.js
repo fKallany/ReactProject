@@ -30,7 +30,7 @@ function ForgotPassword() {
 
             <div className="text-center">
               <span className="txt1">Go to</span>
-              <a href="/" className='txt2'>Home Page</a>
+              <a href="/" className='txt2'>Login Page</a>
             </div>
 
           </form>

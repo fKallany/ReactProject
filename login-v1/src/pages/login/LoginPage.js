@@ -5,6 +5,9 @@ import './LoginPage.css'
 function LoginPage() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const onClick = () => {
+    window.location.href = '/home';
+  };
 
   return (
     <div className="container">
@@ -37,7 +40,7 @@ function LoginPage() {
             </div>
 
             <div className="container-login-form-btn">
-              <button className="login-form-btn">Login</button>
+              <button type='button' onClick={onClick} className="login-form-btn">Login</button>
             </div>
 
             <div className="text-center">
