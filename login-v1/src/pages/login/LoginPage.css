@@ -196,3 +196,10 @@
 .has-val + .focus-input::before {
   width: 100%;
 }
+
+/* Error */
+.error {
+  padding-top: 5px;
+  position: absolute;
+  color: #dc91ff;
+}
