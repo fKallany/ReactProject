@@ -26,9 +26,9 @@ function LoginPage() {
     watch,
     formState: { errors },
   } = useForm({ resolver: yupResolver(schema) });
-  // const onClick = () => {
-  //   window.location.href = '/home';
-  // };
+  const onClick = () => {
+    window.location.href = '/home';
+  };
   const handleSubmit = (data: any) => {
     console.log(data)
   };
@@ -70,8 +70,8 @@ function LoginPage() {
             </div>
 
             <div className="container-login-form-btn">
-              <button type='submit' className="login-form-btn">Login</button>
-              {/* onClick={onClick} */}
+              <button onClick={onClick} type='submit' className="login-form-btn">Login</button>
+
             </div>
 
             <div className="text-center">

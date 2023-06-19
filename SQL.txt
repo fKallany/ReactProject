@@ -1,0 +1,17 @@
+select * from reactproject.users u;
+select * from reactproject.posts p;
+use reactproject;
+create table users(
+	id integer primary key auto_increment,
+    nickname varchar(255) not null,
+    email varchar(255) not null
+);
+create table posts(
+	id integer primary key auto_increment,
+    title varchar(255) not null,
+    body varchar(255) not null,
+    user_id integer not null,
+    foreign key (user_id) references users(id),
+    created varchar(255) not null
+);
+select p.id 'idpost', p.title, p.body, p.created, u.id 'iduser', u.nickname from posts p inner join users u on u.id = p.user_id;
