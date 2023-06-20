@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './HomePage.css'
 
 const HomePage = ({ posts }) => {
@@ -10,6 +11,12 @@ const HomePage = ({ posts }) => {
           <div className="posts">
             {posts.map((item, i) => (
               <div key={i} className="post">
+                <button className='remove-btn'>x</button>
+                <button className='update-btn'>
+                  <FontAwesomeIcon
+                    icon="fa-solid fa-pen"
+                    style={{ color: "#21d4fd", }}
+                  /></button>
                 <div className='post-content'>
                   <p className='user-nickname'>{item.nickname}</p>
                   <p className='user-title'>{item.title}</p>

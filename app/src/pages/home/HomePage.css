@@ -26,7 +26,7 @@
 }
 
 .post:hover {
-  background: linear-gradient(to left, #21d4fd, #b721ff);
+  background: linear-gradient(to left, rgb(33, 212, 253), #b721ff);
 }
 
 .post:hover .user-body {
@@ -46,6 +46,7 @@
   padding-bottom: 10px;
   color: #fff;
   opacity: 0.8;
+  padding-top: 5px;
 }
 
 .user-title {
@@ -59,9 +60,25 @@
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
-  background: linear-gradient(to left, #21d4fd, #b721ff);
+  background: linear-gradient(to left, rgb(33, 212, 253), #b721ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.remove-btn {
+  position: relative;
+  float: right;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  padding: 2px 5px;
+}
 
+.update-btn {
+  position: relative;
+  float: left;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  padding: 2px 5px;
+}

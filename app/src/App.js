@@ -35,7 +35,6 @@ function App() {
         <Route path='/home' element={<HomePage posts={posts} />} />
       </Routes>
     </BrowserRouter>
-
   )
 }
 
