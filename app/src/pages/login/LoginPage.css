@@ -1,16 +1,15 @@
+/* Reset Css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
 /* Container */
 .container {
   width: 100%;
   margin: 0 auto; 
 }
-
 .container-login {
   width: 100%;
   min-height: 100vh;
@@ -21,7 +20,6 @@
   padding: 15px;
   background: #111;
 }
-
 .container-login-form-btn {
   display: flex;
   flex-wrap: wrap;
@@ -38,7 +36,6 @@
   padding: 77px 55px 33px 55px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
-
 .wrap-input {
   width: 100%;
   position: relative;
@@ -50,7 +47,6 @@
 .login-form {
   width: 100%;
 }
-
 .login-form-title {
   display: block;
   font-size: 30px;
@@ -59,11 +55,9 @@
   text-align: center;
   margin-bottom: 20px;
 }
-
 .login-form-title img {
   width: 150px;
 }
-
 .login-form-btn {
   font-size: 15px;
   border: none;
@@ -84,7 +78,6 @@
   background: -o-linear-gradient(to left, #21d4fd, #b721ff);
   background: -moz-linear-gradient(to left, #21d4fd, #b721ff);
 }
-
 .login-form-btn:hover {
   cursor: pointer;
 }
@@ -101,11 +94,9 @@
   background: transparent;
   padding: 0 5px;
 }
-
 .input:focus {
   outline: 0;
 }
-
 .focus-input {
   position: absolute;
   display: block;
@@ -116,7 +107,6 @@
   pointer-events: none;
   color: #adadad;
 }
-
 .focus-input::before {
   content: "";
   display: block;
@@ -135,7 +125,6 @@
   background: -o-linear-gradient(to left, #21d4fd, #b721ff);
   background: -moz-linear-gradient(to left, #21d4fd, #b721ff);
 }
-
 .focus-input::after {
   font-size: 15px;
   color: #999;
@@ -153,11 +142,9 @@
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
 }
-
 .input:focus + .focus-input::after {
   top: -15px;
 }
-
 .input:focus + .focus-input::before {
   width: 100%;
 }
@@ -169,18 +156,15 @@
   align-items: center;
   margin-top: 20px;
 }
-
 .text-center:last-child {
   margin-top: 10px;
 }
-
 .txt1 {
   font-size: 14px;
   color: #adadad;
   line-height: 1.5;
   padding-right: 5px;
 }
-
 .txt2, .txt3 {
   font-size: 14px;
   color: #6a7dfe;
@@ -192,7 +176,6 @@
 .has-val + .focus-input::after {
   top: -15px;
 }
-
 .has-val + .focus-input::before {
   width: 100%;
 }

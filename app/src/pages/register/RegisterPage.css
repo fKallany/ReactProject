@@ -9,7 +9,6 @@
   padding: 15px;
   background: #111;
 }
-
 .container-register-form-btn {
   display: flex;
   flex-wrap: wrap;
@@ -31,7 +30,6 @@
 .register-form {
   width: 100%;
 }
-
 .register-form-title {
   display: block;
   font-size: 30px;
@@ -40,11 +38,9 @@
   text-align: center;
   margin-bottom: 40px;
 }
-
 .register-form-title img {
   width: 150px;
 }
-
 .register-form-btn {
   font-size: 15px;
   border: none;
@@ -64,9 +60,6 @@
   background: -o-linear-gradient(to left, #21d4fd, #b721ff);
   background: -moz-linear-gradient(to left, #21d4fd, #b721ff);
 }
-
 .register-form-btn:hover {
   cursor: pointer;
 }
-
-

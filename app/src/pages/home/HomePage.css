@@ -1,3 +1,4 @@
+/* Container */
 .container-home {
   width: 100%;
   min-height: 100vh;
@@ -5,41 +6,38 @@
   padding: 15px;
   background: #111;
 }
-
 .container-section {
   min-height: 100vh;
   margin: 10px;
   border-radius: 20px;
 }
 
+/* Post */
 .posts {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
 }
-
 .post {
   background: #333;
   margin: 10px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
 .post:hover {
   background: linear-gradient(to left, rgb(33, 212, 253), #b721ff);
 }
-
 .post:hover .user-body {
   background: #eee;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .post-content {
   padding: 30px;
   cursor: pointer;
 }
 
+/* User */
 .user-nickname {
   font-size: 20px;
   font-weight: bold;
@@ -48,14 +46,12 @@
   opacity: 0.8;
   padding-top: 5px;
 }
-
 .user-title {
   font-size: 18px;
   padding-bottom: 5px;
   color: #fff;
   opacity: 0.8;
 }
-
 .user-body {
   text-transform: uppercase;
   font-size: 14px;
@@ -65,20 +61,24 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* btn */
 .remove-btn {
   position: relative;
   float: right;
-  top: 20px;
+  top: 15%;
   right: 20px;
   cursor: pointer;
-  padding: 2px 5px;
+  padding: 40px 15px;
+  background-color: transparent;
+  border-color: transparent;
 }
-
 .update-btn {
   position: relative;
   float: left;
-  top: 20px;
+  top: 15%;
   left: 20px;
   cursor: pointer;
-  padding: 2px 5px;
+  padding: 40px 15px;
+  background-color: transparent;
+  border-color: transparent;
 }
