@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 100vh;
   text-align: center;
-  padding: 15px;
+  padding: 60px 15px 15px 15px;
   background: #111;
 }
 .container-section {
@@ -60,8 +60,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-/* btn */
+/* 
 .remove-btn {
   position: relative;
   float: right;
@@ -81,4 +80,4 @@
   padding: 40px 15px;
   background-color: transparent;
   border-color: transparent;
-}
+} */
